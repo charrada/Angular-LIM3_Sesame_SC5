@@ -1,0 +1,47 @@
+<br><br><br>
+
+
+
+<form>
+
+
+  <div class="form-group">
+    <label for="firstname">First Name</label>
+    <input  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"  [(ngModel)]="user.firstname" name="firstname"    >
+  </div>
+
+  <div class="form-group">
+    <label for="lastname">Last Name</label>
+    <input  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"  [(ngModel)]="user.lastname" name="lastname"    >
+  </div>
+
+
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"  [(ngModel)]="user.email" name="email"    >
+  </div>
+
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"  [(ngModel)]="user.address" name="address"    >
+  </div>
+
+
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input  class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="user.username" name="username" >
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="user.password" name="password" >
+  </div>
+
+<br><br>
+
+  <button (click)="updateUser()"  class="btn btn-primary">update</button>
+
+</form>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>

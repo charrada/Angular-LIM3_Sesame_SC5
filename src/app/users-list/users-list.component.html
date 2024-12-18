@@ -1,0 +1,40 @@
+<p>users-list works!</p>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th >Id</th>
+      <th >First Name</th>
+      <th >Last Name</th>
+      <th >Email</th>
+      <th >Password</th>
+      <th >Address</th>
+      <th >Username</th>
+      <th >Action</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor=" let user of users">
+      <td>{{ user.id }}
+        <p *ngIf="user.id==1" >Id spécial</p>
+      </td>
+
+      <td>{{ user.firstname }}</td>
+      <td>{{ user.lastname }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.password }}</td>
+      <td>{{ user.address }}</td>
+      <td>{{ user.username }}</td>
+
+      <td> <button (click)="update(user.id)" > update </button>
+
+      &nbsp; &nbsp; <button (click)="delete(user.id)" > Delete </button></td>
+    </tr>
+
+
+
+
+  </tbody>
+</table>
